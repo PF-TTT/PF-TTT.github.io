@@ -29,5 +29,5 @@ SORTIES:
 
 ORGANIGRAMME: 
 
-PSEUDO-CODE: Fonction de réinitialisation, est utilisé pour coloré et effacé chaque case du tableau.
+PSEUDO-CODE: Fonction de réinitialisation, est utilisé pour coloré et effacé chaque case du tableau. Notre program choisi un question sur neuf, si vous avez bien répondue jouez votre tour. Si non, votre tour est sauté et vous devez attendre pour l'adversaire à essayer.
 
