@@ -29,4 +29,5 @@ SORTIES:
 
 ORGANIGRAMME: 
 
-PSEUDO-CODE: 
+PSEUDO-CODE: Fonction de réinitialisation, est utilisé pour coloré et effacé chaque case du tableau.
+
