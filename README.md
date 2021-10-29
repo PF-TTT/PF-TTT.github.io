@@ -27,7 +27,7 @@ SORTIES:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ORGANIGRAMME: 
+ORGANIGRAMME: https://lucid.app/lucidchart/edff988b-c27b-4e74-8424-438225721226/edit?viewport_loc=-131%2C14%2C1899%2C920%2C0_0&invitationId=inv_26c659ab-91c2-41d0-85cc-6111b5ee2887
 
 PSEUDO-CODE: https://docs.google.com/document/d/1qiOOTLMNrvhjym2lVVe7OI3aCtJ9YQe983Hj4VHnXkM/edit
 
