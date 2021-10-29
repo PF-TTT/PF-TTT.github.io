@@ -29,25 +29,5 @@ SORTIES:
 
 ORGANIGRAMME: 
 
-PSEUDO-CODE: 
-Debut
-        Affiche le titre (***Bienvenue au jeux TICTACTOE***)
-        Affiche les regles du jeux
-        Affiche bouton (*start*)
-        Cliquez le bouton (start)
-                         Affiche plaque du jeu (planche de tictactoe)
-                         Affiche le titre (***Halloween TICTACTOE***)
-                         Affiche couleur (Orange et Noire) 
-                         Affiche bouton (reset)
-                         Affiche image (theme halloween)
-                                        Affiche prompt (***Choisis ta couleur… Orange ou noir***)
-                                       (Avant chaque tour) Affiche prompt (***question de maths***)
-                                        Si tu répond la bonne réponse à la question:
-                                                    Choisi une case sur la plaque
-                                        Si tu repond mal la question:
-                                                    Tour de l'autre joueur
-                                        Si la planche est remplie:
-                                                     Cliquez le bouton reset
-Fin du jeu
-
+PSEUDO-CODE: https://docs.google.com/document/d/1qiOOTLMNrvhjym2lVVe7OI3aCtJ9YQe983Hj4VHnXkM/edit
 
