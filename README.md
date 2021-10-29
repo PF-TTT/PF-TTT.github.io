@@ -29,5 +29,25 @@ SORTIES:
 
 ORGANIGRAMME: 
 
-PSEUDO-CODE: Fonction de réinitialisation, est utilisé pour coloré et effacé chaque case du tableau. Notre programme choisi une question sur neuf, si vous avez bien répondue jouez votre tour. Sinon, votre tour est sauté et vous devez attendre pour l'adversaire à essayer.
+PSEUDO-CODE: 
+Debut
+        Affiche le titre (***Bienvenue au jeux TICTACTOE***)
+        Affiche les regles du jeux
+        Affiche bouton (*start*)
+        Cliquez le bouton (start)
+                         Affiche plaque du jeu (planche de tictactoe)
+                         Affiche le titre (***Halloween TICTACTOE***)
+                         Affiche couleur (Orange et Noire) 
+                         Affiche bouton (reset)
+                         Affiche image (theme halloween)
+                                        Affiche prompt (***Choisis ta couleur… Orange ou noir***)
+                                       (Avant chaque tour) Affiche prompt (***question de maths***)
+                                        Si tu répond la bonne réponse à la question:
+                                                    Choisi une case sur la plaque
+                                        Si tu repond mal la question:
+                                                    Tour de l'autre joueur
+                                        Si la planche est remplie:
+                                                     Cliquez le bouton reset
+Fin du jeu
+
 
