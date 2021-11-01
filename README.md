@@ -15,7 +15,7 @@ Avant de jouer votre tour, vous devez répondre correctement à un problème de 
 
 DOMAINE ÉDUCATIF: Maths (Les questions)
 
-ANNÉE D'ÉTUDES: Secondaire
+ANNÉE D'ÉTUDES: Élémentaire, Secondaire, etc
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
