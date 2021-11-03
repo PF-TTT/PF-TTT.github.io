@@ -4,10 +4,16 @@ var penColor="black"
 var st = false
 var couleurJ1
 var couleurJ2
-
+var pNum = 0
+var dNum = 0
+var opp = 0
+var sym = ""
+var color = ""
+var jun = 0
+var jdeux = 0
 
 function debut(){
-  alert("allo")
+  cont = 0
   var retart = true
   while (retart==true){
     couleurJ1 = prompt("Quel couleur veut-tu? (orange ou noir)")
@@ -24,11 +30,12 @@ function debut(){
   } else{
     alert("Variable invalid")
   }}
-
+  color = couleurJ1
   if (cont==1){
-  question1()
+  question()
   }
 }
+
 
 
 function setPixelColor(pixel){
@@ -41,21 +48,21 @@ function setPixelColor(pixel){
 }
 function tourr(){
   if (cont==2){
-    question2()
+    question()
   } else if (cont==3){
-    question3()
+    question()
   }else if (cont==4){
-    question4()
+    question()
   }else if (cont==5){
-    question5()
+    question()
   }else if (cont==6){
-    question6()
+    question()
   }else if (cont==7){
-    question7()
+    question()
   }else if (cont==8){
-    question8()
+    question()
   }else if (cont==9){
-    question9()
+    question()
   }}
 
 function setPenColor(pen){
@@ -77,8 +84,7 @@ function reste(){
   var temporaire = document.getElementById('pixel8').innerHTML = pixel8.style.backgroundColor= "transparent"
   var temporaire = document.getElementById('pixel9').innerHTML = pixel9.style.backgroundColor= "transparent"
   cont = 1
-  var jun = 0
-  var jdeux = 0
+  
   var gagnant = prompt("Quel joueur a gagner?(1 ou 2)?")
   if (gagnant==1){
     jun = jun + 1
@@ -94,113 +100,47 @@ function reste(){
 
 
 
-
-
-// Questions
-function question1(){
-  var Q1 = prompt("Qu'est-ce que 11 + 6?")
-
-if (Q1==17) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ1
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
-function question2(){
-  var Q2 = prompt("Qu'est-ce que 5 x 3?")
-
-if (Q2==15) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ2
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
+function question(){
+  pNum = getRandomInt(10)
+  dNum = getRandomInt(10)
+  opp = getRandomInt(2)
+  if (opp==0){
+    sym = "+"
+    var rep = pNum + dNum
+  } else if (opp==1){
+    sym = "-"
+    var rep = pNum - dNum
+  } else if (opp==2){
+    sym = "*"
+    var rep = pNum * dNum
+  } else if (opp==3){
+    sym = "/"
+    var rep = pNum / dNum
+  } else if (opp==4){
+    sym = "%"
+    var rep = pNum % dNum
   }
-}
-
-function question3(){
-  var Q3 = prompt("Qu'est-ce que 23 - 6?")
-
-if (Q3==17) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ1
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question4(){
-  var Q4 = prompt("Qu'est-ce que 15 % 3?")
-
-if (Q4==5) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ2
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question5(){
-  var Q5 = prompt("Qu'est-ce que 5 + 3?")
-
-if (Q5==8) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ1
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question6(){
-  var Q6 = prompt("Qu'est-ce que 6 % 2?")
-
-if (Q6==3) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ2
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question7(){
-  var Q7 = prompt("Qu'est-ce que 10 x 10?")
-
-if (Q7==100) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ1
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question8(){
-  var Q8 = prompt("Qu'est-ce que 20 - 10?")
-
-if (Q8==10) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ2
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
-  }
-}
-
-function question9(){
-  var Q9 = prompt("Qu'est-ce que 9 + 9")
-
-if (Q9==18) {
-  alert("Correct!\n" + "Jouez votre tour...")
-  penColor = couleurJ1
-  } else {
-  alert("Incorrect!\n" + "Passer votre tour...")
-  cont = cont+1
+  var entre = prompt("Qu'est-ce que " + pNum + "" + sym + "" + dNum + "?")
+  if (entre==rep){
+    alert("Correct!\n" + "Jouez votre tour...")
+    penColor = color
+    if (color=="orange"){
+      color = "black"
+    } else if (color=="black"){
+      color = "orange"
+    }
+    
+  } else{
+    alert("Incorrect!\n" + "Passer votre tour...")
+    if (color=="orange"){
+      color = "black";
+    } else if (color=="black"){
+      color = "orange"
+    }
+    cont = cont+1
   }
 }
